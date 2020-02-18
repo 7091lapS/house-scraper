@@ -1,5 +1,6 @@
-const testLink = 'https://www.rightmove.co.uk/property-for-sale/find.html?locationIdentifier=REGION%5E85458&maxPrice=650000&propertyTypes=&mustHave=&dontShow=newHome&furnishTypes=&keywords='
-
+// const testLink = 'https://www.rightmove.co.uk/property-for-sale/find.html?locationIdentifier=REGION%5E85458&maxPrice=650000&propertyTypes=&mustHave=&dontShow=newHome&furnishTypes=&keywords='
+const args = process.argv.slice(2)
+const testLink = args[0]
 
 const CurlRequest = require('curl-request');
 const jsdom = require("jsdom");
